@@ -34,25 +34,35 @@ export const FoodProvider = ({children}) => {
         }
     }
 
+    // const handleCheck = (e) => {
+    //     const data = e.target.value;
+    //     const isChecked = e.target.checked;
+    //     setCheckboxInput({...checkboxInput, [data]: !checkboxInput[data]});
+    //     const filtereddata = foodData.filter(item => isChecked ? item[data] : item)
+    //     setFilteredMenu(filtereddata);
+    // }
+
+    // const filtered = foodData.filter(item => checkboxInput.is_vegetarian ? item.is_vegetarian : item).filter(item => checkboxInput.is_spicy ? item.is_spicy : item);
+    // console.log(filtered) 
+
     const handleCheck = (e) => {
-        const checkValue = e.target.value;
-        const isChecked = e.target.checked;
+        const checkValue = e.target.value; // is_spicy
+        const isChecked = e.target.checked; // true
         
         let resultArr = [];
 
         if (checkValue === "is_vegetarian") {
-            const first = isChecked; 
-            const second = checkboxInput.is_spicy; 
+            const first = isChecked;   // true
+            const second = checkboxInput.is_spicy // false
             resultArr = [
                 ...foodData.filter( 
                     ({ is_vegetarian, is_spicy }) => { 
-    
                         return ((is_vegetarian && first) || (is_spicy && second))}
                 ),
             ];
-        } else {
-            const first = isChecked;
-            const second = checkboxInput.is_vegetarian;
+        } else { 
+            const first = isChecked;  // true
+            const second = checkboxInput.is_vegetarian; // false
             resultArr = [
                 ...foodData.filter(
                     ({ is_vegetarian, is_spicy }) => (is_vegetarian && second) || (is_spicy && first)
@@ -60,7 +70,7 @@ export const FoodProvider = ({children}) => {
             ];
         }
         setCheckboxInput({ ...checkboxInput, [checkValue]: isChecked });
-        if (!resultArr.length) setFilteredMenu(foodData);
+        if (!resultArr.length) setFilteredMenu(foodData); 
         else setFilteredMenu(resultArr);
     }
 
