@@ -41,11 +41,13 @@ export const FoodProvider = ({children}) => {
         let resultArr = [];
 
         if (checkValue === "is_vegetarian") {
-            const first = isChecked;
-            const second = checkboxInput.is_spicy;
+            const first = isChecked; 
+            const second = checkboxInput.is_spicy; 
             resultArr = [
-                ...foodData.filter(
-                    ({ is_vegetarian, is_spicy }) => (is_vegetarian && first) || (is_spicy && second)
+                ...foodData.filter( 
+                    ({ is_vegetarian, is_spicy }) => { 
+    
+                        return ((is_vegetarian && first) || (is_spicy && second))}
                 ),
             ];
         } else {
