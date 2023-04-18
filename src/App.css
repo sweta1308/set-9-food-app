@@ -146,11 +146,29 @@ label {
     width: 230px
   }
 
-  .main-list-cart img, .delivery-cart, .quantity {
+  .main-list-cart img {
     margin-right: 0;
   }
 
   .main-list-cart .main-content {
     text-align: center;
+  }
+
+  .main-list-cart {
+    width: 300px;
+    margin: 30px auto;
+  }
+
+  .desc-div {
+    width: 100%;
+  }
+
+  .button-remove {
+    top: 0;
+    margin: 10px auto;
+  }
+
+  label {
+    display: block;
   }
 }
