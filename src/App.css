@@ -131,3 +131,14 @@ img {
 label {
   margin: 15px;
 }
+
+@media (max-width: 385px) {
+  ul {
+    display: block;
+  }
+
+  .main-list {
+    width: 230px;
+    margin: 30px auto;
+  }
+}

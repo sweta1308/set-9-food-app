@@ -6,7 +6,8 @@ export const Header = () => {
     const activeState = ({isActive}) => ({
         color: isActive ? 'rgb(152, 228, 228)' : 'rgb(192, 233, 157)',
         padding: '0 50px',
-        textDecoration: 'none'
+        textDecoration: 'none',
+        fontSize: '18px'
     })
     return (
         <nav>
