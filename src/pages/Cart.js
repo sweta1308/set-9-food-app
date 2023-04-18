@@ -8,6 +8,9 @@ export const Cart = () => {
     return (
         <>
             <CartHeader totalDeliveryTime={totalDeliveryTime} couponApplied={couponApplied} discountPrice={discountPrice}  totalPrice={totalPrice} setCouponApplied={setCouponApplied} />
+
+            {cartData.length === 0 && <h3>Your Cart is empty.</h3>}
+
             <ol>
                 {cartData.map(item => {
                     const {id, name, description, price, image, delivery_time, quantity} = item
