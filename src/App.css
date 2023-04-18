@@ -132,7 +132,7 @@ label {
   margin: 15px;
 }
 
-@media (max-width: 385px) {
+@media (max-width: 500px) {
   ul, .main-list-cart, .main-list-cart .main-content, .delivery-cart {
     display: block;
   }
