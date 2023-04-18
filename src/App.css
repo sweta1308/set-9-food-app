@@ -2,37 +2,132 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-btn {
+  background-color: brown;
+  color: rgb(240, 241, 187);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  /* border: none; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-btn:hover, .button-remove:hover {
+  background-color: rgb(226, 81, 81);
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  background-color: rgb(40, 38, 38);
+  padding: 30px ;
+  font-size: 24px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(137, 135, 135, 0.4);
+}
+
+.home-header {
+  font-size: 42px;
+  margin: 150px auto;
+  text-transform: uppercase;
+  text-shadow: 2px 3px #b3d8d9;
+  color: rgb(236, 184, 231);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(39, 34, 34);
+  color: rgb(192, 233, 157);
+}
+
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.main-list {
+  list-style: none;
+  width: 300px;
+  box-sizing: border-box;
+  box-shadow: 0 0 12px rgba(183, 158, 158, 0.3);
+  margin-top: 50px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: 300px;
+  height: 250px;
+}
+
+.main-content {
+  padding: 15px;
+}
+
+/* Cart */
+
+.main-list-cart {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px auto;
+  background-color: rgb(48, 43, 43);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.main-list-cart img {
+  width: 150px;
+  height: 130px;
+  margin-right: -200px;
+  margin-top: 10px;
+}
+
+.main-list-cart .main-content {
+  text-align: left;
+  display: flex;
+}
+
+.cart-desc {
+  position: relative;
+  top: -15px;
+  font-size: 14px;
+}
+
+.delivery-cart {
+  display: flex;
+  margin: 0 60px;
+}
+
+.desc-div {
+  width: 200px;
+}
+
+.quantity {
+  margin: 18px 50px 0;
+}
+
+.button-remove {
+  position: relative;
+  top: 30px;
+  width: 150px;
+  height: 50px;
+  background-color: brown;
+  color: rgb(240, 241, 187);
+  cursor: pointer;
+}
+
+/* FIlter Nav */
+
+.filter-nav {
+  font-size: 18px;
+}
+
+.filter-nav .search {
+  padding: 10px;
+  border-radius: 9px;
+  background-color: rgb(97, 89, 89);
+  color:rgb(216, 186, 222);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+label {
+  margin: 15px;
 }
