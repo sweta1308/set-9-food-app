@@ -133,12 +133,16 @@ label {
 }
 
 @media (max-width: 385px) {
-  ul {
+  ul, .main-list-cart, .main-list-cart .main-content, .delivery-cart {
     display: block;
   }
 
   .main-list {
     width: 230px;
     margin: 30px auto;
+  }
+
+  .main-list img {
+    width: 230px
   }
 }
