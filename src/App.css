@@ -149,4 +149,8 @@ label {
   .main-list-cart img, .delivery-cart, .quantity {
     margin-right: 0;
   }
+
+  .main-list-cart .main-content {
+    text-align: center;
+  }
 }
