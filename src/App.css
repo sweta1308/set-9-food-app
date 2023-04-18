@@ -145,4 +145,8 @@ label {
   .main-list img {
     width: 230px
   }
+
+  .main-list-cart img, .delivery-cart, .quantity {
+    margin-right: 0;
+  }
 }
