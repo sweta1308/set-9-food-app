@@ -45,7 +45,7 @@ ul {
 
 .main-list {
   list-style: none;
-  width: 300px;
+  width: 220px;
   box-sizing: border-box;
   box-shadow: 0 0 12px rgba(183, 158, 158, 0.3);
   margin-top: 50px;
@@ -53,8 +53,8 @@ ul {
 }
 
 img {
-  width: 300px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
 }
 
 .main-content {
