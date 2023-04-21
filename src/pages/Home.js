@@ -11,8 +11,10 @@ export const Home = () => {
     })
     return (
         <>
-            <h1 className="home-header">Welcome to neoG Food Ordering App!</h1>
-            <NavLink className='menu-navlink' style={activeState} to='/menu'>Go to Menu</NavLink>
+            <div className="home-image">
+                <h1 className="home-header">Welcome to neoG Food Ordering App!</h1>
+                <NavLink className='menu-navlink' style={activeState} to='/menu'>Go to Menu</NavLink>
+            </div>
         </>
     )
 }
