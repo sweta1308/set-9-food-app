@@ -46,10 +46,11 @@ export const FoodProvider = ({children}) => {
             filterData = filterData.filter(({name})=> name.toLowerCase().includes(filters.search.toLowerCase()))
         } 
         if (filters.category.length > 0) {
-            filters.category.map((item) => {
-                filterData = filterData.filter(food => food[item]);
-                return filterData;
-            })
+            // filters.category.map((item) => {
+            //     filterData = filterData.filter(food => food[item]);
+            //     return filterData;
+            // })
+            filterData = filterData.filter(data => filters.category.find(filter => data[filter]))
         }
 
 
